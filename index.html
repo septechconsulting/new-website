@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+</head>
+
+<body ng-app="sepWebsite" ng-cloak layout="column">
+
+    <!-- Container #1 (see wireframe) -->
+    <md-toolbar layout="row" md-scroll-shrink class="md-hue-2">
+        <div class="md-toolbar-tools" layout-align="center center">SEP Technology Consulting</div>
+    </md-toolbar>
+
+    <!-- Container #2 -->
+    <div flex layout="row">
+        <!-- Container #3 -->
+        <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+            Sidenav
+        </md-sidenav>
+        <!-- Container #4 -->
+        <md-content flex id="content">
+            Content
+        </md-content>
+    </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <!-- Your application bootstrap  -->
+    <script src="sepWebsite.js"></script>
+
+</body>
+
+<!--
+<md-toolbar md-scroll-shrink flex="100" class="md-hue-2">
+    <div class="md-toolbar-tools" layout-align="center center">SEP Technology Consulting</div>
+</md-toolbar>
+<div layout="vertical" flex="30">Hello World</div>
+-->
+
+</html>
